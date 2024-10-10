@@ -18,9 +18,9 @@ console.log(`Para meu ano que vem, meu nome ainda será ${nomeCompleto}, minha i
 
 
 // Agencia de viagens
-console.log("-----------------");
-console.log("      LOGIN      ")
-console.log("-----------------");
+console.log("---------------------");
+console.log("┃  👤   LOGIN   👤  ┃");
+console.log("---------------------");
 
 const loginCerto = "Marcos";
 const senhaCerta = 252007;
@@ -29,11 +29,11 @@ var login = entrada("Digite seu login: ");
 var senha = entrada("Digite sua senha: ");
 
 while (login != loginCerto){
-  console.log("Usuario não encontrado")
+  console.log("❌ Usuario não encontrado ❌")
   login = entrada("Digite novamente seu login: ");
     }
 while (senha != senhaCerta){
-  console.log("senha não encontrada")
+  console.log("❌ senha não encontrada ❌")
   senha = entrada("Digite novamente sua senha: ");
     }
 
@@ -48,21 +48,20 @@ const listaDeDestino = new Array(
 " Araucaria"
 );
 
-console.log(`Olá senhor ${nomeComprador}, portador do cpf ${cpfComprador}, confirmado a idade de ${idadeComprador} anos, sua lista de destino são: ${listaDeDestino}? qual dos destinos podemos confirmar?`);
+console.log(`Olá senhor ${nomeComprador} 😄, portador do cpf ${cpfComprador}, o senhor preencheu a idade como de ${idadeComprador} anos, está correto? verificamos tambem que o senhor tem uma lista de destinos como: ${listaDeDestino}. qual(is) destino(s) pretende ir?`);
 console.log(listaDeDestino[0]);
 console.log("");
 console.log(`Olá senhor ${nomeComprador}, adicionamos mais um destino à sua lista de interesses.`);
 
 listaDeDestino.push("Osasco");
 
-var idadeComprador = '';
 
 if (idadeComprador < 18){
-console.log(`Infelizmente não podemos vender a passagem, pois o senhor(a) ser menor de idade `);
+console.log(`🙁 Infelizmente não podemos vender a passagem, pois o senhor(a) ser menor de idade 🙁`);
 }
 
 if (idadeComprador > 18){
-console.log(`Parabéns, sua idade foi verificada, e aprovada com sucesso! verifique também outros lugares de interrese da sua lista como: ${listaDeDestino}`);
+console.log(`🥳 Parabéns, sua idade foi verificada, e aprovada com sucesso! 🥳 verifique também outros lugares de interrese da sua lista como: ${listaDeDestino}`);
 }
 
 
