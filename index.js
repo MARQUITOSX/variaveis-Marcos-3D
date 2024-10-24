@@ -53,16 +53,18 @@ console.log(listaDeDestino[0]);
 console.log("");
 console.log(`Olá senhor ${nomeComprador}, adicionamos mais um destino à sua lista de interesses.`);
 
+
 listaDeDestino.push("Osasco");
 
 
 if (idadeComprador < 18){
-console.log(`🙁 Infelizmente não podemos vender a passagem, pois o senhor(a) ser menor de idade 🙁`);
+console.log(`🙁 Porém infelizmente não podemos vender a passagem, pois o senhor(a) ser menor de idade 🙁`);
 }
 
 if (idadeComprador > 18){
 console.log(`🥳 Parabéns, sua idade foi verificada, e aprovada com sucesso! 🥳 verifique também outros lugares de interrese da sua lista como: ${listaDeDestino}`);
 }
+
 
 
 
